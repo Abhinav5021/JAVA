@@ -194,7 +194,7 @@ public class Controller {
 				break;
 			}
 			case 11:{
-				System.out.println("Enter a Number to Reverse");
+				System.out.println("Enter a Number to Reverse : ");
 				int num = sc.nextInt();
 				NumRev n = new NumRev(num);
 				System.out.println("Reverse of the number is : "+n.reverse());
@@ -202,6 +202,10 @@ public class Controller {
 				break;
 			}
 			case 12:{
+				System.out.println("Enter a Number to Check Palindrome :");
+				int num = sc.nextInt();
+				Palindrome p = new Palindrome(num);
+				System.out.println(p.palindrome());
 				break;
 			}
 			case 13:{
