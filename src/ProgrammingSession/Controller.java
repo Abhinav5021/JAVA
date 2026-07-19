@@ -323,8 +323,8 @@ public class Controller {
 					String name = sc.nextLine();
 					Library lib = new Library(name);
 					lib.displayBookName();
-					int ch=1;
-					while(ch!=0) {
+					int ch = 1;
+					while (ch != 0) {
 						System.out.println("1. Issue Book");
 						System.out.println("2. Return Book");
 						System.out.println("0. Exit");
@@ -341,7 +341,7 @@ public class Controller {
 							}
 							case 0: {
 								System.out.println("Exited Successfully.. !");
-								ch=0;
+								ch = 0;
 								break;
 							}
 							default: {
