@@ -8,6 +8,7 @@ public class EvenOdd {
 		this.num = num;
 	}
 
+
 	public void isEvenOdd() {
 		if(num%2==0) {
 			System.out.println(num + " is Even ");

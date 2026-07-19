@@ -110,6 +110,7 @@ public class Controller {
 					System.out.println("Enter a number to check if Even or Odd : ");
 					int num = sc.nextInt();
 					EvenOdd eo = new EvenOdd(num);
+					eo.isEvenOdd();
 
 					break;
 				}
