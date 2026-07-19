@@ -235,14 +235,78 @@ public class Controller {
 			}
 			case 15:{
 				
-				System.out.println();
+				System.out.println("Welcome to ATM : ");
+				double bal = 5000;
+				ATM atm = new ATM(bal);
+				boolean c = true;
+				while(c) {
+					System.out.println("Bank Menu : ");
+					System.out.println("1. Check Balance");
+					System.out.println("2. Deposit");
+					System.out.println("3. Withdrawal");
+					System.out.println("0. Exit");
+					System.out.print("Enter Choice : ");
+					int ch = sc.nextInt();
+					switch(ch){
+					case 1:{
+						System.out.println("Balance is : "+atm.getBal());
+						break;
+					}
+					case 2:{
+						System.out.println("Enter  Deposit Amount : ");
+						double amount = sc.nextDouble();
+						System.out.println("Success..!! new Balance is : "+atm.deposit(amount));
+						break;
+					}
+					case 3:{
+						System.out.println("Enter Withdrawal Amount : ");
+						double amount = sc.nextDouble();
+						if(amount > atm.getBal()) {
+							System.out.println("Insufficient Funds .. !");
+						}
+						else {
+							System.out.println("Success..!! new Balance is : "+atm.withdrawal(amount));
+						}
+						break;
+					}
+					case 0:{
+						System.out.println("Exited Successfully.. !");
+						c = false;
+						break;
+					}
+					default:{
+						System.out.println("Invalid Input .. !");
+					}
+					}
+
+				}
 				
 				break;
 			}
 			case 16:{
+				System.out.println("Shopping Cart : ");
+				System.out.println("Enter Product Price : ");
+				double price = sc.nextDouble();
+				System.out.println("Enter Purchase Quantity : ");
+				int quantity = sc.nextInt();
+				ShoppingCart cart = new ShoppingCart(price, quantity);
+				System.out.println("Final Price is : "+cart.calculate());
+				
 				break;
 			}
 			case 17:{
+				
+				//17. Electricity Bill
+				//Create ElectricityBill:
+				//Constructor â†’ units
+				//Method â†’ calculate bill:
+				//0â€“100 â†’ â‚¹5/unit
+				//101â€“200 â†’ â‚¹7/unit
+				//200+ â†’ â‚¹10/unit
+				
+				
+				
+				
 				break;
 			}
 			case 18:{
