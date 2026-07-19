@@ -294,19 +294,17 @@ public class Controller {
 				
 				break;
 			}
-			case 17:{
-				
-				//17. Electricity Bill
-				//Create ElectricityBill:
-				//Constructor â†’ units
-				//Method â†’ calculate bill:
-				//0â€“100 â†’ â‚¹5/unit
-				//101â€“200 â†’ â‚¹7/unit
-				//200+ â†’ â‚¹10/unit
-				
-				
-				
-				
+			case 17:{				
+				System.out.println("Electricity Bill Calculator");
+				System.out.println("Enter Billing Units : ");
+				int units = sc.nextInt();
+				BillCalculator b = new BillCalculator(units);
+				if(units==0) {
+					System.out.println("Invalid Units..!!");
+				}
+				else {
+					System.out.println("Total Bill Amount is : "+b.calculate());
+				}
 				break;
 			}
 			case 18:{
