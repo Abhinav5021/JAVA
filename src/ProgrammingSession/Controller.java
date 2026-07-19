@@ -220,9 +220,23 @@ public class Controller {
 				break;
 			}
 			case 14:{
+				
+				System.out.println("Finding the largest of 3 Numbers : ");
+				System.out.println("Enter Number A : ");
+				int a = sc.nextInt();
+				System.out.println("Enter Number B : ");
+				int b = sc.nextInt();
+				System.out.println("Enter Number C : ");
+				int c = sc.nextInt();
+				Largest l = new Largest(a, b, c);
+				System.out.println("Largest of the given Numbers is : "+l.largest() );
+				
 				break;
 			}
 			case 15:{
+				
+				System.out.println();
+				
 				break;
 			}
 			case 16:{
