@@ -307,10 +307,20 @@ public class Controller {
 				}
 				break;
 			}
-			case 18:{
+			case 18:{				
+				System.out.println("Enter a term to Calculate Fibonacci Series : ");
+				int term = sc.nextInt();
+				Fibonacci f = new Fibonacci(term);
+				f.calculate();
+				System.out.println();
+				
 				break;
 			}
 			case 19:{
+				System.out.println("Enter the number till where you want to find prime Number : ");
+				int num = sc.nextInt();
+				Prime p = new Prime(num);
+				p.prime();
 				break;
 			}
 			case 20:{
