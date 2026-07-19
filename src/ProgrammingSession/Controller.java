@@ -209,6 +209,14 @@ public class Controller {
 				break;
 			}
 			case 13:{
+				System.out.println("Calculating Power of a Number");
+				System.out.println("Enter the Base : ");
+				int base = sc.nextInt();
+				System.out.println("Enter the Exponent : ");
+				int exp = sc.nextInt();
+				
+				Power p = new Power(base, exp);
+				System.out.println("Value is : "+p.calculate());
 				break;
 			}
 			case 14:{
