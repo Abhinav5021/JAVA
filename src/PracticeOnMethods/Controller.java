@@ -18,7 +18,7 @@ public class Controller {
 			System.out.println("3. Recharge");
 			System.out.println("4. Temperature ");
 			System.out.println("5. Login ");
-			System.out.println("6. ATM ");
+			System.out.println("6. E-Commerse Discount ");
 			System.out.println("7. Salary ");
 			System.out.println("8. Interest ");
 			System.out.println("9. Food Order ");
@@ -90,6 +90,7 @@ public class Controller {
 				case 2: {
 
 					System.out.println("Percentage is : " + o.calculate());
+					break;
 
 				}
 

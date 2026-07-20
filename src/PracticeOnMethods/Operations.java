@@ -57,7 +57,7 @@ public class Operations {
 	}
 
 	public boolean login(String uName, String pass) {
-		if(uName=="Abhinav"&&pass=="1234"){
+		if(uName.equals("Abhinav")&&pass.equals("1234")){
 			return true;
 		}
 		else {
@@ -68,7 +68,7 @@ public class Operations {
 	public double calculateDiscount(double amount, double discount) {
 		double a = discount/100;
 
-		return amount-a;
+		return amount-(amount*a);
 	}
 
 	public double calculateSalary(double basic) {
