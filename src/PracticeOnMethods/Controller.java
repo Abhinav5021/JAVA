@@ -245,6 +245,19 @@ public class Controller {
 					break;
 				}
 				case 15: {
+					
+//					Shopping Cart Total
+//					Method calculateTotal(double price1, double price2, double price3).
+					
+					System.out.println("Enter Price of The followings : ");
+					System.out.println("Product 1 : ");
+					double price1 = sc.nextDouble();
+					System.out.println("Product 2 : ");
+					double price2 = sc.nextDouble();
+					System.out.println("Product 3 : ");
+					double price3 = sc.nextDouble();
+					System.out.println("Total Price is : "+o.calculatePrice(price1, price2, price3));
+					
 					break;
 				}
 				case 16: {
