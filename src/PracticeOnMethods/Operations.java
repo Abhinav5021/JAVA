@@ -100,7 +100,7 @@ public class Operations {
 			return false;
 		}
 	}
-	
+
 	public double calculateFare(double km, double fare) {
 		return km*fare;
 	}
@@ -116,15 +116,125 @@ public class Operations {
 
 	public void issueBook(String name, int available, int qty) {
 		if(qty<=available) {
-			
+
 		}
-		
+
 	}
-	
+
 	public double calculatePrice(double price1, double price2, double price3) {
 		return price1+price2+price3;
 	}
+
+	public int largest(int a, int b, int c) {
+
+		if(a>b&&a>c) {
+			return a;
+		}
+		else if(b>a&&b>c) {
+			return b;
+		}
+		else {
+			return c;
+		}
+
+	}
+
+	public boolean isPrime(int num) {
+
+		if(num == 2) {
+			return true;
+		}
+		else {
+			int flag = 1;
+			for(int i = 2; i<num; i++) {
+				
+				if(num%i==0) {
+					flag = 0;
+				}
+
+			}
+			if(flag == 1) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+	}
 	
 	
+	public String palindrome(int num) {
+		int rev=0;
+		int original = num;
+		
+		while(num!=0) {
+			
+			rev = rev*10+(num%10);
+			num/=10;
+			
+		}
+
+		if(original==rev) {
+			return "Number is Palindrome";
+		}
+		else {
+			return "Number is not Palindrome";
+		}
+		
+	}
+
+	int even,odd;
+	
+	public void calculateEvenOdd(int[] arr){
+		
+		for(int i = 0; i<arr.length; i++) {
+			if(arr[i]%2 == 0) {
+				even++;
+			}
+			else {
+				odd++;
+			}
+		}
+	}
+	
+	
+	public String getGrade(int marks) {
+		
+		if(marks>=90&&marks<=100) {
+			return "A";
+		}
+		else if(marks>=75&&marks<90){
+			return "B";	
+		}
+		else if(marks>=60&&marks<75) {
+			return "C";
+		}
+		else if(marks>=40&&marks<60) {
+			return "D";
+		}
+		else {
+			return "Fail";
+		}
+		
+	}
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

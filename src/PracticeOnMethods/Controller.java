@@ -25,8 +25,14 @@ public class Controller {
 			System.out.println("10. Electricity Bill ");
 			System.out.println("11. Vote ");
 			System.out.println("12. Fares ");
-			System.out.println("3. Check Pass");
-			// System.out.println("1. ATM ");
+			System.out.println("13. Check Pass");
+			System.out.println("14. IssueBook");
+			System.out.println("15. Shopping Cart Total ");
+			System.out.println("16. Find Max of 3");
+			System.out.println("17. Prime number Check ");
+			System.out.println("18. Palindrome Check ");
+			System.out.println("19. Even/Odd Counter ");
+			System.out.println("20. Grade Calculator ");
 			System.out.println("0. Exit ");
 
 			System.out.println("Enter Your Choice :  ");
@@ -245,10 +251,7 @@ public class Controller {
 					break;
 				}
 				case 15: {
-					
-//					Shopping Cart Total
-//					Method calculateTotal(double price1, double price2, double price3).
-					
+									
 					System.out.println("Enter Price of The followings : ");
 					System.out.println("Product 1 : ");
 					double price1 = sc.nextDouble();
@@ -261,18 +264,56 @@ public class Controller {
 					break;
 				}
 				case 16: {
+					
+					System.out.println("Enter Three numbers : ");
+					System.out.println("Number 1 : ");
+					int a1 = sc.nextInt();
+					System.out.println("Number 2 : ");
+					int b1 = sc.nextInt();
+					System.out.println("Number 3 : ");
+					int c1 = sc.nextInt();
+					
+					 System.out.println("Largerst of the Given numbers is : "+o.largest(a1, b1, c1));
+					
+					
 					break;
 				}
 				case 17: {
+					
+					System.out.println("Enter number to check if isPrime : ");
+					int num = sc.nextInt();
+					System.out.println("Number is Prime : " +o.isPrime(num));
 					break;
 				}
 				case 18: {
+					
+					System.out.println("Enter a number to check Palindrome : ");
+					int num = sc.nextInt();
+					System.out.println(o.palindrome(num));
 					break;
 				}
 				case 19: {
+					
+					System.out.println("Enter number of digits to Enter : ");
+					int n = sc.nextInt();
+					int[] arr = new int[n];
+					
+					System.out.println("Enter 5 numbers : ");
+					
+					for(int i=0;i<n;i++) {
+						
+						arr[i] = sc.nextInt();
+						
+					}
+					o.calculateEvenOdd(arr);
+					System.out.println("Entered Array of Numbers contains : "+o.even+" Even & "+o.odd+" Odd Numbers.");
+					
 					break;
 				}
 				case 20: {
+					System.out.println("Enter The Marks : ");
+					int marks = sc.nextInt();
+					System.err.println("Your Grade is : " + o.getGrade(marks));
 					break;
 				}
 
